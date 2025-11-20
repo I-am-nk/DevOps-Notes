@@ -92,3 +92,56 @@ Agile and DevOps complement each other:
 * **DevOps** ensures automated deployments, testing, and operational reliability.
 
 Together, they enable **Continuous Integration and Continuous Delivery (CI/CD)**, resulting in faster and more predictable releases.
+
+
+
+
+# Virtualization Concepts and Container vs VM Comparison
+
+## Definitions
+
+### 1. Server
+
+A physical or virtual machine that provides services, resources, or applications to clients over a network.
+
+### 2. Virtual Machine (VM)
+
+A software-based emulation of a computer that runs on a physical server. It behaves like an independent system with its own operating system and applications.
+
+### 3. Hypervisor
+
+A software layer that enables virtualization by creating and managing multiple VMs on a single physical server.
+
+---
+
+## How They Are Interconnected
+
+* A **server** (hardware) hosts a **hypervisor**.
+* The **hypervisor** creates and manages multiple **virtual machines** on the same server.
+* Each **VM** operates independently and can run different operating systems and applications.
+
+---
+
+## Key Benefits of Virtualization
+
+* Maximizes hardware utilization
+* Isolates applications for better security
+* Simplifies deployment and scaling
+* Reduces costs by minimizing the need for multiple physical servers
+
+---
+
+# Containers vs Virtual Machines
+
+| Feature                 | Containers                            | Virtual Machines (VMs)                       |
+| ----------------------- | ------------------------------------- | -------------------------------------------- |
+| **Architecture**        | Shares the host OS kernel             | Has its own OS, runs over a hypervisor       |
+| **Boot Time**           | Seconds                               | Minutes                                      |
+| **Size**                | Lightweight (MBs)                     | Heavy (GBs)                                  |
+| **Resource Usage**      | Minimal (shares kernel, low overhead) | High (each VM requires CPU, RAM, storage)    |
+| **Isolation**           | Process-level isolation (less secure) | Full machine-level isolation (more secure)   |
+| **Performance**         | Near-native performance               | Slightly slower due to virtualization layer  |
+| **Portability**         | Highly portable across environments   | Less portable (depends on OS/hypervisor)     |
+| **Use Case**            | Microservices, CI/CD, DevOps          | Monolithic apps, legacy workloads            |
+| **Dependency Handling** | Includes only app dependencies        | Contains dependencies within the VM OS image |
+| **Management Tools**    | Docker, Podman, Kubernetes            | VMware, VirtualBox, Hyper-V, KVM             |
