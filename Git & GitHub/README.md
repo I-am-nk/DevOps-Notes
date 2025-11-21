@@ -46,6 +46,7 @@ In a centralized system:
 - There is one central server where the entire codebase lives.
 - Developers connect to this server to pull code and push changes.
 - If the server is down, no one can collaborate or access history.
+<img width="1081" height="265" alt="image" src="https://github.com/user-attachments/assets/a3db33e0-1c04-45c3-8ef7-7880a84f2490" />
 
 ## 2. Distributed Version Control System (DVCS)
 **Examples:** Git, Mercurial
@@ -54,6 +55,7 @@ In a distributed system (like Git):
 - Every developer has a full copy of the repository, including history.
 - You can commit, view logs, branch etc., offline.
 - You only need to connect to the central repo (e.g., GitHub) when pushing or pulling.
+<img width="1005" height="295" alt="image" src="https://github.com/user-attachments/assets/76124a6a-bf6b-4d1e-8e35-f217a1fd7ecd" />
 
 ## Advantages
 - Work offline.
@@ -177,6 +179,9 @@ git checkout -b hotfix/urgent-crash-fix
 
 
 ---
+
+
+<img width="1018" height="349" alt="image" src="https://github.com/user-attachments/assets/5aee6d59-31bf-40e1-9fa6-9d623bb425c7" />
 
 ## ✅ Summary Table
 
