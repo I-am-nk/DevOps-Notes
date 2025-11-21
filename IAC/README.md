@@ -99,10 +99,12 @@ It is a reusable piece of Terraform code. You call them in your main code to avo
 **1. Create a Module (Reusable Code Block)**
 Suppose you want to make a reusable VPC. You’d create a folder `network/` with files like:
 
+```
 network/
 ├── main.tf
 ├── variables.tf
 └── outputs.tf
+```
 
 
 Inside, you’d write normal Terraform resources and logic, plus variables for input.
@@ -112,12 +114,13 @@ Inside, you’d write normal Terraform resources and logic, plus variables for i
 **2. Call the Module from Your Main Code**
 In your main Terraform code, you use the `module` block:
 
+```
 module "network" {
 source = "./network"
 vpc_name = "myapp-vpc"
 subnet_count = 3
 }
-
+```
 
 `source` tells Terraform where to find the module folder (it can also be a Git repo or Terraform Registry URL).
 Pass in values as needed (these map to variable definitions in the module).
