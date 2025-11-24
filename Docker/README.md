@@ -265,9 +265,7 @@ docker run --name app1 --network my_bridge nginx
 ```
 
 [Container1]---\
-                            \
-                               [docker0 bridge]---[Host NIC]---Internet
-                             /
+                 [docker0 bridge]---[Host NIC]---Internet
 [Container2]---/
 
 ```
